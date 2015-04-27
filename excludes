@@ -1,0 +1,7 @@
+# This file contains the output files that need %exclude. Full path
+# names, one per line.
+#
+# This bin is already included in rubygem-shoulda-context package. The
+# rubygem-thoughtbot-shoulda is an old package renamed as rubygem-shoulda.
+#
+/usr/bin/convert_to_should_syntax

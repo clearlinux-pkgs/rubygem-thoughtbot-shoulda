@@ -1,0 +1,41 @@
+From 6fa5a51b33d92898441cbf7032eb6305fa468b35 Mon Sep 17 00:00:00 2001
+From: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+Date: Wed, 8 Jul 2015 17:43:34 +0000
+Subject: [PATCH] Change deprecated rake lib
+
+rake/rdoctask is deprecated, use rdoc/task
+
+Signed-off-by: Athenas Jimenez <athenas.jimenez.gonzalez@intel.com>
+---
+ Rakefile                  | 2 +-
+ test/rails3_root/Rakefile | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Rakefile b/Rakefile
+index c829167..828c63f 100644
+--- a/Rakefile
++++ b/Rakefile
+@@ -1,7 +1,7 @@
+ require 'rubygems'
+ require 'rake'
+ require 'rake/testtask'
+-require 'rake/rdoctask'
++require 'rdoc/task'
+ require 'rake/gempackagetask'
+ require 'cucumber/rake/task'
+ 
+diff --git a/test/rails3_root/Rakefile b/test/rails3_root/Rakefile
+index 9cb2046..2284872 100644
+--- a/test/rails3_root/Rakefile
++++ b/test/rails3_root/Rakefile
+@@ -5,6 +5,6 @@ require File.expand_path('../config/application', __FILE__)
+ 
+ require 'rake'
+ require 'rake/testtask'
+-require 'rake/rdoctask'
++require 'rdoc/task'
+ 
+ Rails::Application.load_tasks
+-- 
+2.4.2
+
